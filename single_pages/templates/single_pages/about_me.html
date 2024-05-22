@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> About UTC </title>
+
+    <link rel="stylesheet" href="{% static 'project/bootstrap/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+{% include 'project/navbar.html' %}
+
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>안녕하세요. UTC입니다.</h1>
+                <br/>
+                <h4>University To Company</h4>
+                <ul>
+                    <li>Joined University</li>
+                    <ul>
+                        <li>대학교1</li>
+                        <li>대학교2</li>
+                        <li>대학교3</li>
+                        <li>대학교4</li>
+                        <li>대학교5</li>
+                        <li>대학교6</li>
+                    </ul>
+                    <li>Joined COMPANY</li>
+                    <ul>
+                        <li>회사1</li>
+                        <li>회사2</li>
+                        <li>회사3</li>
+                        <li>회사4</li>
+                        <li>회사5</li>
+                        <li>회사6</li>
+                        <li>회사7</li>
+                        <li>회사8</li>
+
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="col-lg-4">
+                <img class="img-fluid" src="{% static 'single_pages/images/CB_poster.jpg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>

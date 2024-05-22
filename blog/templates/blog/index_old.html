@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+</head>
+<body>
+    <h1>Blog Site</h1>
+
+    {% for p in posts %} <!-- 파이썬 코드-->
+        <hr> 
+        <h2> 제목 : <a href="{{p.get_absolute_url}}">{{ p.title }}</a></h2>
+        <h4> 등록일 : {{ p.created_at}} </h4>
+        <h4> 수정일 : {{ p.update_at }}</h4>
+        <p> 내용 : {{ p.content }}</p>
+
+    {% endfor %}
+</body>
+</html>
+
